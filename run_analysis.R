@@ -32,18 +32,20 @@ mergeTrainingTest <- function(){
   ## Load training data first
   setwd("train/")
   trainobs <- read.table(file="X_train.txt",
-                                     colClasses="numeric",
-                                     stringsAsFactors=FALSE
-                                     )
+                         colClasses="numeric",
+                         stringsAsFactors=FALSE)
+  
   names(trainobs) <- features$name
   
   trainactivities <- read.table(file="y_train.txt",
-                                       colClasses="numeric",
-                                       col.names=c("activities"))
+                                colClasses="numeric",
+                                col.names=c("activities"))
   
   # Merge activity names as a new column in trainobs
-  trainobs <- cbind(trainobs,as.factor(activities[trainactivities$activities,2][[1]]))
-  names(trainobs)[562] <- "activity_names"
+  trainobs <- cbind(trainobs,
+                    as.factor(activities[trainactivities$activities,2][[1]]))
+  
+  names(trainobs)[ncol(trainobs)] <- "activity_names"
   
   # Load data about people who performed observations into file
   trainsubjects <- read.table(file="subject_train.txt",
@@ -52,9 +54,32 @@ mergeTrainingTest <- function(){
   
   trainobs <- cbind(trainobs,trainsubjects)
   
+  ## Load testing data next
+  setwd("../test")
+  
+  testobs <- read.table(file="X_test.txt",
+                         colClasses="numeric",
+                         stringsAsFactors=FALSE)
+  
+  names(testobs) <- features$name
+  
+  testactivities <- read.table(file="y_test.txt",
+                               colClasses="numeric",
+                               col.names=c("activities"))
+  
+  testsubjects <- read.table(file="subject_test.txt",
+                             colClasses="numeric",
+                             col.names=c("Subject_ID"))
+  
+  testobs <- cbind(testobs,
+                   as.factor(activities[testactivities$activities,2][[1]]),
+                   testsubjects)
+  
+  names(testobs)[ncol(testobs)-1] <- "activity_names"
+  
   # Restore original directory
   setwd(startWd)
   
-  return(list(features,trainactivities,trainobs,activities))
+  return(tbl_df(rbind(trainobs,testobs)))
 }
   
