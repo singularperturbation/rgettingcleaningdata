@@ -1,0 +1,60 @@
+# Project file for R Getting/Cleaning Data course on Coursera
+#
+# See description_to_do for basic outline of what needs to be done in analysis
+
+# Merges training/test data sets and returns them as a data frame
+mergeTrainingTest <- function(){
+  
+  neededPkgs <- list("dplyr","tidyr")
+  startWd    <- getwd()
+  sapply(neededPkgs,function(pkg){
+    if (!require(pkg,character.only=TRUE)){
+      stop("Could not load ",pkg,call.=FALSE)
+    }
+  })
+    
+  if (!"UCI HAR Dataset" %in% list.files()){
+    stop("UCI Dataset not found - check working directory")
+  }
+  
+  # Load list of feature names
+  setwd("UCI HAR Dataset")
+  
+  activities <- read.table(file="activity_labels.txt",
+                                  col.names=c("number","activity_name"),
+                                  colClasses=c("numeric","character"))
+  
+  features <- read.table(file="features.txt",
+                                col.names=c("feature_number","name"),
+                                colClasses=c("numeric","character"),
+                                stringsAsFactors=FALSE)  
+  
+  ## Load training data first
+  setwd("train/")
+  trainobs <- read.table(file="X_train.txt",
+                                     colClasses="numeric",
+                                     stringsAsFactors=FALSE
+                                     )
+  names(trainobs) <- features$name
+  
+  trainactivities <- read.table(file="y_train.txt",
+                                       colClasses="numeric",
+                                       col.names=c("activities"))
+  
+  # Merge activity names as a new column in trainobs
+  trainobs <- cbind(trainobs,as.factor(activities[trainactivities$activities,2][[1]]))
+  names(trainobs)[562] <- "activity_names"
+  
+  # Load data about people who performed observations into file
+  trainsubjects <- read.table(file="subject_train.txt",
+                              colClasses="numeric",
+                              col.names=c("Subject_ID"))
+  
+  trainobs <- cbind(trainobs,trainsubjects)
+  
+  # Restore original directory
+  setwd(startWd)
+  
+  return(list(features,trainactivities,trainobs,activities))
+}
+  
