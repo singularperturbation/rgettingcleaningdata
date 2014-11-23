@@ -1,8 +1,8 @@
-# Project file for R Getting/Cleaning Data course on Coursera
-#
-# See description_to_do for basic outline of what needs to be done in analysis
+## Project file for R Getting/Cleaning Data course on Coursera
+##
+## See description_to_do for basic outline of what needs to be done in analysis
 
-# Merges training/test data sets and returns them as a data frame
+## Merges training/test data sets and returns them as a data frame
 mergeTrainingTest <- function(){
   
   neededPkgs <- list("dplyr","tidyr")
@@ -81,5 +81,16 @@ mergeTrainingTest <- function(){
   setwd(startWd)
   
   return(tbl_df(rbind(trainobs,testobs)))
+}
+
+## From the combined test/train data, return only the standard deviation / mean
+## measurements.  (With exception being made for subject ID and activity type).
+extractOnlyMeanStdDev <- function(){
+  #TODO: Implementation
+}
+
+## From the combined data (only std devs and averages) - return tidied dataset
+tidyData <- function(){
+  #TODO: Implementation
 }
   
