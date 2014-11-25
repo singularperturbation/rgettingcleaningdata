@@ -1,0 +1,193 @@
+"Country Code",Ranking,Name,"GDP Millions USD"
+USA,1,"United States",16800000
+CHN,2,China,9240270
+JPN,3,Japan,4901530
+DEU,4,Germany,3634823
+FRA,5,France,2734949
+GBR,6,"United Kingdom",2521381
+BRA,7,Brazil,2245673
+RUS,8,"Russian Federation",2096777
+ITA,9,Italy,2071307
+IND,10,India,1876797
+CAN,11,Canada,1826769
+AUS,12,Australia,1560597
+ESP,13,Spain,1358263
+KOR,14,"Korea, Rep.",1304554
+MEX,15,Mexico,1260915
+IDN,16,Indonesia,868346
+TUR,17,Turkey,820207
+NLD,18,Netherlands,800173
+SAU,19,"Saudi Arabia",745273
+CHE,20,Switzerland,650377
+ARG,21,Argentina,611755
+SWE,22,Sweden,558949
+NGA,23,Nigeria,521803
+POL,24,Poland,517543
+NOR,25,Norway,512580
+BEL,26,Belgium,508116
+VEN,27,"Venezuela, RB",438284
+AUT,28,Austria,415672
+THA,29,Thailand,387252
+ARE,30,"United Arab Emirates",383799
+COL,31,Colombia,378148
+IRN,32,"Iran, Islamic Rep.",368904
+ZAF,33,"South Africa",350630
+DNK,34,Denmark,330614
+MYS,35,Malaysia,312435
+SGP,36,Singapore,297941
+ISR,37,Israel,291357
+CHL,38,Chile,277199
+HKG,39,"Hong Kong SAR, China",274013
+PHL,40,Philippines,272017
+EGY,41,"Egypt, Arab Rep.",271973
+FIN,42,Finland,256842
+GRC,43,Greece,241721
+PAK,44,Pakistan,236625
+KAZ,45,Kazakhstan,224415
+IRQ,46,Iraq,222879
+PRT,47,Portugal,220022
+IRL,48,Ireland,217816
+DZA,49,Algeria,210183
+QAT,50,Qatar,202450
+PER,51,Peru,202296
+CZE,52,"Czech Republic",198450
+ROM,53,Romania,189638
+NZL,54,"New Zealand",185787
+KWT,55,Kuwait,183219
+UKR,56,Ukraine,177431
+VNM,57,Vietnam,171392
+HUN,58,Hungary,129989
+BGD,59,Bangladesh,129857
+AGO,60,Angola,121704
+MAR,61,Morocco,104374
+PRI,62,"Puerto Rico",103135
+SVK,63,"Slovak Republic",95770
+ECU,64,Ecuador,90023
+OMN,65,Oman,80570
+LBY,66,Libya,75456
+AZE,67,Azerbaijan,73560
+BLR,68,Belarus,71710
+CUB,69,Cuba,68234
+LKA,70,"Sri Lanka",67182
+SDN,71,Sudan,66548
+DOM,72,"Dominican Republic",60614
+LUX,73,Luxembourg,60383
+HRV,74,Croatia,57539
+UZB,75,Uzbekistan,56796
+URY,76,Uruguay,55708
+GTM,77,Guatemala,53797
+BGR,78,Bulgaria,53010
+MAC,79,"Macao SAR, China",51753
+CRI,80,"Costa Rica",49621
+GHA,81,Ghana,47929
+TUN,82,Tunisia,47129
+ETH,83,Ethiopia,46869
+SVN,84,Slovenia,46833
+LTU,85,Lithuania,45932
+LBN,86,Lebanon,44352
+KEN,87,Kenya,44101
+PAN,88,Panama,42648
+SRB,89,Serbia,42521
+TKM,90,Turkmenistan,41851
+YEM,91,"Yemen, Rep.",35955
+JOR,92,Jordan,33678
+TZA,93,Tanzania,33225
+BHR,94,Bahrain,32788
+LVA,95,Latvia,30957
+CIV,96,"Côte d'Ivoire",30905
+ZAR,97,"Congo, Dem. Rep.",30629
+BOL,98,Bolivia,30601
+PRY,99,Paraguay,29949
+CMR,100,Cameroon,29275
+TTO,101,"Trinidad and Tobago",24641
+EST,102,Estonia,24477
+SLV,103,"El Salvador",24259
+ZMB,104,Zambia,22384
+CYP,105,Cyprus,21911
+UGA,106,Uganda,21483
+AFG,107,Afghanistan,20725
+GAB,108,Gabon,19344
+NPL,109,Nepal,19294
+HND,110,Honduras,18550
+BIH,111,"Bosnia and Herzegovina",17828
+GEO,112,Georgia,16127
+BRN,113,"Brunei Darussalam",16111
+GNQ,114,"Equatorial Guinea",15574
+MOZ,115,Mozambique,15319
+PNG,116,"Papua New Guinea",15289
+KHM,117,Cambodia,15250
+SEN,118,Senegal,15150
+BWA,119,Botswana,14788
+ISL,120,Iceland,14620
+JAM,121,Jamaica,14362
+COG,122,"Congo, Rep.",14108
+SSD,123,"South Sudan",13797
+TCD,124,Chad,13414
+ALB,125,Albania,12904
+ZWE,126,Zimbabwe,12802
+NAM,127,Namibia,12580
+MUS,128,Mauritius,11938
+BFA,129,"Burkina Faso",11583
+MNG,130,Mongolia,11516
+NIC,131,Nicaragua,11256
+LAO,132,"Lao PDR",11141
+MLI,133,Mali,10943
+MDG,134,Madagascar,10797
+ARM,135,Armenia,10432
+WBG,136,"West Bank and Gaza",10239
+MKD,137,"Macedonia, FYR",10221
+MLT,138,Malta,9642
+TJK,139,Tajikistan,8508
+HTI,140,Haiti,8459
+BEN,141,Benin,8307
+BHS,142,"Bahamas, The",8149
+MDA,143,Moldova,7935
+RWA,144,Rwanda,7452
+NER,145,Niger,7356
+KGZ,146,"Kyrgyz Republic",7226
+KSV,147,Kosovo,6960
+GIN,148,Guinea,6193
+MCO,149,Monaco,6075
+BMU,150,Bermuda,5474
+SUR,151,Suriname,5231
+SLE,152,"Sierra Leone",4929
+MNE,153,Montenegro,4428
+TGO,154,Togo,4339
+BRB,155,Barbados,4225
+MRT,156,Mauritania,4163
+FJI,157,Fiji,4028
+SWZ,158,Swaziland,3791
+MWI,159,Malawi,3705
+ERI,160,Eritrea,3444
+GUY,161,Guyana,3076
+BDI,162,Burundi,2718
+ABW,163,Aruba,2584
+MDV,164,Maldives,2300
+LSO,165,Lesotho,2230
+LBR,166,Liberia,1951
+CPV,167,"Cape Verde",1888
+BTN,168,Bhutan,1884
+TMP,169,Timor-Leste,1615
+BLZ,170,Belize,1605
+CAF,171,"Central African Republic",1538
+DJI,172,Djibouti,1456
+LCA,173,"St. Lucia",1332
+SYC,174,Seychelles,1268
+ATG,175,"Antigua and Barbuda",1230
+SLB,176,"Solomon Islands",1096
+GMB,177,"Gambia, The",914
+GNB,178,Guinea-Bissau,859
+VUT,179,Vanuatu,835
+GRD,180,Grenada,834
+KNA,181,"St. Kitts and Nevis",743
+VCT,182,"St. Vincent and the Grenadines",726
+WSM,183,Samoa,694
+COM,184,Comoros,657
+DMA,185,Dominica,505
+TON,186,Tonga,466
+FSM,187,"Micronesia, Fed. Sts.",335
+STP,188,"São Tomé and Principe",311
+PLW,189,Palau,247
+MHL,190,"Marshall Islands",175
+KIR,191,Kiribati,169
+TUV,192,Tuvalu,38
